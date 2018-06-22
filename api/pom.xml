@@ -51,7 +51,17 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
-    <build>
+<distributionManagement>
+  <snapshotRepository>
+    <id>snapshots</id>
+    <url>http://35.231.101.237:7777/nexus/content/repositories/snapshots</url>
+  </snapshotRepository>
+ <repository>
+    <id>releases</id>
+    <url>http://35.231.101.237:7777/nexus/content/repositories/releases</url>
+  </repository>
+</distributionManagement>      
+<build>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
